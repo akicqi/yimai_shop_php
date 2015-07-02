@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>易买网 - 购物车</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="scripts/function.js"></script>
+</head>
+<body>
+<div id="header" class="wrap">
+	<div id="logo"><img src="images/logo.gif" /></div>
+	<div class="help"><?php echo $display;?><a href="cart.php" class="shopping">购物车</a><a href='#'>订单</a><a href="guestbook.html">留言</a></div>
+	<div class="navbar">
+		<ul class="clearfix">
+			<li class="current"><a href="#">首页</a></li>
+			<li><a href="#">图书</a></li>
+			<li><a href="#">百货</a></li>
+			<li><a href="#">品牌</a></li>
+			<li><a href="#">促销</a></li>
+		</ul>
+	</div>
+</div>
+<div id="childNav">
+	<div class="wrap">
+		<ul class="clearfix">
+			<li class="first"><a href="#">音乐</a></li>
+			<li><a href="#">影视</a></li>
+			<li><a href="#">少儿</a></li>
+			<li><a href="#">动漫</a></li>
+			<li><a href="#">小说</a></li>
+			<li><a href="#">外语</a></li>
+			<li><a href="#">数码相机</a></li>
+			<li><a href="#">笔记本</a></li>
+			<li><a href="#">羽绒服</a></li>
+			<li><a href="#">秋冬靴</a></li>
+			<li><a href="#">运动鞋</a></li>
+			<li><a href="#">美容护肤</a></li>
+			<li><a href="#">家纺用品</a></li>
+			<li><a href="#">婴幼奶粉</a></li>
+			<li><a href="#">饰品</a></li>
+			<li class="last"><a href="#">Investor Relations</a></li>
+		</ul>
+	</div>
+</div>
+<div id="position" class="wrap">
+	您现在的位置：<a href="index.html">易买网</a> &gt; 购物车
+</div>
+<div class="wrap">
+	<div id="shopping">
+		<form action="order.php">		
+			<table>
+				<tr>
+					<th>商品名称</th>
+					<th>商品价格</th>
+					<th>购买数量</th>
+					<th>价格小计</th>
+					<th>操作</th>
+				</tr>
+				<?php foreach($cartList as $go) :?>
+				<input type='hidden' name='g_code' value="<?php echo $go['g_code'];?>"/>
+				<input type='hidden' name='goods_id' value="<?php echo $go['g_id'];?>" />
+				<input type='hidden' name='goods_name' value="<?php echo $go['c_name'];?>" />
+				<tr id="product_id_1">
+					<td class="thumb"><img src="images/product/0_tiny.gif" /><a href="index.php?act=view&id=<?php echo $go['g_id'];?>"><?php echo $go['c_name'];?></a></td>
+					<td class="price" id="price_id_1">
+						<span>￥<?php echo $go['c_price'];?></span>
+						<input type="hidden" name='price' value="<?php echo $go['c_price'];?>" />
+					</td>
+					<td class="number">
+						<dl>
+							<dd onclick="updateNumber(1,false);">-</dd>
+							<dt><input id="number_id_1" type="text" name="number" value="<?php echo $go['c_number'];?>" /></dt>
+							<dd onclick="updateNumber(1,true);">+</dd>
+						</dl>
+					</td>
+					<td class="price" id="count_id_1">
+						<span><?php echo $go['c_price'] * $go['c_number'];?></span>
+						<input type="hidden" name='total_price' value="<?php echo $go['c_price'] * $go['c_number'];?>" />
+					</td>
+					<td class="delete"><a href="cart.php?act=delete&user_id=<?php echo $go['u_id'];?>&goods_id=<?php echo $go['g_id'];?>" onclick=" return confirm('您确定要删除当前商品？')">删除</a></td>
+				</tr>
+				<?php endforeach;?>
+				<tr id="product_id_1"><td></td><td></td><td></td><td class="price" id="price_id_1">合计：</td><td class="price" id="allCount_id_1"><span><?php echo $go['c_price'] * $go['c_number'];?></span></td></tr>
+			</table>
+			<div class="button"><input type="submit" value="" /></div>
+		</form>
+	</div>
+</div>
+<div id="footer">
+	Copyright &copy; 2010 北大青鸟 All Rights Reserved. 京ICP证1000001号
+</div>
+</body>
+</html>

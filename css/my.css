@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* presonalsort */
+.presonalsort{border:solid 1px #d7d7d7;width:145px;padding:10px 0;background:#f3f3f3;}
+.presonalsort dl{margin:10px 0 0 0;}
+.presonalsort dl dt{font-size:15px;padding:0 0 0 14px;font-weight:800;height:28px;}
+.presonalsort dl dd a{display:block;height:28px;line-height:28px;padding:0 0 0 30px;}
+.presonalsort dl dd a.current{background:#58b533;color:#fff;}
+/* presonalinfo */
+.presonalinfo{width:815px;}
+.presonalinfo h2{font-size:14px;height:28px;}
+/* ddbox */
+.ddbox .ddboxtab{height:28px;_overflow:hidden;border-bottom:solid 1px #3164af;}
+.ddbox .ddboxtab a{background:url(../images/mytabbg.gif) no-repeat -115px 0;display:inline-block;float:left;width:115px;height:28px;line-height:28px;text-align:center;position:relative;margin:1px 0 0 10px;}
+.ddbox .ddboxtab a.current{background-position:0 0;font-weight:800;}
+/* ddtable */
+.ddtable{margin:10px 0 0 0;position:relative;}
+.ddtable .ddinfo th{background:#f3f3f3;text-align:left;padding:5px;}
+.ddtable .ddinfo td{border-bottom:solid 1px #ddd;padding:5px;}
+.ddtable .ddinfo td .paybtn{width:60px;height:18px;line-height:18px;text-align:center;background:#58b533;display:inline-block;color:#fff;margin-bottom:5px;}
+.ddtable .ddinfo td.ddgz{position:relative;height:50px;}
+.ddtable .ddinfo td.ddgz .ddtipbox{display:none;width:370px;background:#fffae2;position:absolute;top:35px;right:195px;*top:5px;*right:100px;border:solid 1px #f5e190;z-index:999;}
+.ddtable .ddinfo td.ddgz .ddtipbox span.arrow{position:absolute;top:30px;right:-7px;background:url(../images/ddtipbox.png) no-repeat;width:7px;height:13px;overflow:hidden;}
+.ddtable .ddinfo td.ddgz .ddtipbox div{padding:15px 15px;}
+.ddtable .ddinfo td.ddgz .ddtipbox div h2{height:24px;}
+.ddtable .ddinfo td.ddgz .ddtipbox table th{border-bottom:solid 1px #f5e190;font-weight:normal;text-align:left;padding:5px 5px;background:none;}
+.ddtable .ddinfo td.ddgz .ddtipbox table td{padding:0;line-height:24px;border:none}

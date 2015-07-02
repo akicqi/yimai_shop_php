@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* layout */
+.leftlist{width:207px;}
+.rightlist{width:763px;}
+/* sort */
+.sort{border:solid 1px #ccc;padding:0 0 10px 0;background:#f5fff0;}
+.sort h2{background:#157128;height:28px;line-height:28px;font-size:16px;color:#fff;padding:0 10px;}
+.sort dl{padding:0 15px;margin:15px 0 0 0;}
+.sort dt{font-size:14px;font-weight:800;height:24px;line-height:24px;}
+.sort dd{height:22px;line-height:22px;padding:0 16px;}
+.sort dd a{background:none!important;}
+/* lipinlist */
+.lipinlist{margin:20px 0 0 0;}
+.lipinlist .lipintitle{border-bottom:solid 1px #157128;}
+.lipinlist .lipintitle h2{width:124px;height:30px;line-height:30px;font-size:14px;color:#333;border-bottom:solid 1px #fff;text-align:center;background:#feda02;}
+.productlist li{float:left;padding:10px 9px;width:172px;}
+.productlist li img{border:solid 1px #ccc;}
+.productlist li dl dt{height:32px;line-height:16px;overflow:hidden;}
+.productlist li dl dd{padding:8px 0 0 0;}
+.addcat{border:solid 1px #ccc;background:#157128;color:#fff!important;display:block;width:80px;height:24px;line-height:24px;overflow:hidden;text-align:center;}

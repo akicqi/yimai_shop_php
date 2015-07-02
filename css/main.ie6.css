@@ -1,0 +1,5 @@
+@charset "utf-8";
+.cat_cont{height: 500px;} 
+#s_nav{bottom:-1px;}
+#s_cats .cat_hd{height:36px;line-height:36px;}
+#s_cats .cat_hd h3 a{width:160px;height:36px;}

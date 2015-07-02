@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* reset */
+.fl,.f_l{float:left;}.f_r{float:right;}.hide{display:none;}
+/* dl_zc */
+.dl_zc{margin:20px 0 0 0;}
+.dl_zc_title { height:33px; line-height:33px; background:url(../images/tit_regist.gif) repeat-x 0 -34px;}
+.dl_zc_title h2 {background:url(../images/tit_regist.gif) no-repeat; height:33px; font-size:14px; padding-left:20px;}
+.dl_zc_title .rt_bg {background:url(../images/tit_regist.gif) no-repeat 0 -68px; height:33px; height:33px; width:10px;}
+.dl-con{padding:15px 20px 20px;border-left:solid 1px #D1D1D1;border-right:solid 1px #D1D1D1;border-bottom:solid 1px #D1D1D1;border-top:none;}
+/* entry */
+#entry .mc{padding:20px;border:solid #D1D1D1;border-width:0 1px 1px;}
+#entry .form{float:left;overflow:hidden;margin-top:40px;}
+#entry .item{padding-top:5px;height:50px;line-height:26px;}
+#entry .item .btnimg{width:88px;height:36px;background:url(../images/loginbtn.gif) no-repeat;cursor:pointer;border:none;}
+#entry #autoentry{height:40px;}
+#entry .item a:link,#entry .item a:visited{text-decoration:underline;}
+#entry .label{width:150px;text-align:right;font-size:14px;float:left;}
+#entry .text{width:240px;height:16px;padding:4px 3px;border:1px solid #bbb;font-size:14px;font-family:arial,"宋体";}
+#entry .text-1{width:100px;}
+#entry .blank{width:16px;height:16px;margin:2px 5px 0;}
+#entry .mar{margin-right:10px;}
+#entry .img img{height:26px;margin:0 5px;}
+#entry .succeed{background:url(../images/pwdstrength.gif) no-repeat -105px 0;}
+#entry .yellow_button{font-size:14px;font-weight:bold;color:#fff;}
+#entry .highlight1{border:1px solid #EFA100;outline:2px solid #FFDC97;*border:2px solid #ffcc66;*padding:3px 2px;}
+#entry .highlight2{border:1px solid #f00;outline:1px solid #FFC1C1;color:#f00;}
+#entry .pwdbg{background:#FFF8EB;}
+#entry .focus{color:#999;line-height:22px;*line-height:20px;}
+#entry select{margin-top:5px;}
+#entry .null,#entry .error{color:red;line-height:22px;*line-height:20px;}
+#entry .checkbox{margin-top:6px;*margin-top:2px;}
+/* guide */
+#guide{float:right;width:300px;height:220px;padding:60px 0 20px 20px;border-left:1px solid #E7E7E7;}
+#guide .content{color:#666;padding:10px 0 0;}
+#guide .btn-personal{width:137px;height:35px;background:url(../images/bg_regist.jpg) no-repeat;line-height:30px;margin:20px auto;font-weight:bold;font-size:14px;display:block;text-align:center;}
+#guide .btn-personal:hover{text-decoration:none;}
+/* regist */
+#regist .tipinfo {width:411px;height:32px;line-height:32px;margin:0px auto 20px;font-weight:bold;padding-left:50px;text-align:left;}
+#regist .item{padding-top:5px;height:50px;overflow:hidden;line-height:26px;}
+#regist .item .btnimg{width:88px;height:36px;background:url(../images/registerbtn.gif) no-repeat;cursor:pointer;border:none;}
+#regist .item a:link,#regist .item a:visited{text-decoration:underline;}
+#regist .label{width:300px;text-align:right;font-size:14px;float:left;}
+#regist .span-150{width:150px;}
+#regist .text{width:240px;height:16px;padding:4px 3px;border:1px solid #bbb;font-size:14px;font-family:arial,"宋体";}
+#regist .text-1{width:100px;}
+#regist .blank{width:16px;height:16px;margin:2px 5px 0;}
+#regist .img img{height:26px;margin:0 5px;}
+#regist .succeed{background:url(../images/pwdstrength.gif) no-repeat -105px 0;}
+#regist .yellow_button{font-size:14px;font-weight:bold;color:#fff;border:none;cursor:pointer;}
+#regist .highlight1{border:1px solid #EFA100;outline:2px solid #FFDC97;*border:2px solid #ffcc66;*padding:3px 2px;}
+#regist .highlight2{border:1px solid #f00;outline:1px solid #FFC1C1;color:#f00;}
+#regist .pwdbg{background:#FFF8EB;}
+#regist .focus{color:#999;line-height:22px;*line-height:20px;}
+#regist .null,#regist .error{color:red;line-height:22px;*line-height:20px;}
+#regist .checkbox{margin-top:6px;*margin-top:2px;}
+#regist #referrer{color:#999;font-size:12px;}
+#pwdstrength{color:#999;line-height:22px;padding-right:10px;}
+#pwdstrength b{float:left;width:104px;height:13px;overflow:hidden;margin-top:5px;*margin-top:3px;}
+.strengthA b{background:url(../images/pwdstrength.gif) no-repeat 0 0;}
+.strengthB b{background:url(../images/pwdstrength.gif) no-repeat 0 -13px;}
+.strengthC b{background:url(../images/pwdstrength.gif) no-repeat 0 -26px;}
